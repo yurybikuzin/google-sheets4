@@ -5,7 +5,9 @@
 
 name = "google-sheets4"
 version = "3.0.0+20220221"
-authors = ["Sebastian Thiel <byronimo@gmail.com>"]
+# 3.0.0+20220221-fix0 - ValueRange::values: Option<Vec<Vec<String>>> => Option<Vec<Vec<serde_json::Value>>>
+# 3.0.0+20220221 - https://github.com/Byron/google-apis-rs/tree/main/gen/sheets4
+authors = ["Sebastian Thiel <byronimo@gmail.com>", "Yury Bikuzin <yury.bikuzin@gmail.com>"]
 description = "A complete library to interact with Sheets (protocol v4)"
 repository = "https://github.com/Byron/google-apis-rs/tree/main/gen/sheets4"
 homepage = "https://developers.google.com/sheets/"
