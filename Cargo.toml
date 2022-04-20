@@ -5,6 +5,7 @@
 
 name = "google-sheets4"
 version = "3.0.0+20220221"
+# 3.0.0+20220221-fix3 - Cargo.toml: hyper-rustls = { version = "0.23", features = [ "rustls-native-certs" ] } => "0.23"
 # 3.0.0+20220221-fix2 - Cargo.toml: hyper-rustls = "0.23" => { version = "0.23", features = [ "rustls-native-certs" ] }
 # 3.0.0+20220221-fix1 - Cargo.toml: hyper-rustls = "0.22" => "0.23"
 # 3.0.0+20220221-fix0 - ValueRange::values: Option<Vec<Vec<String>>> => Option<Vec<Vec<serde_json::Value>>>
@@ -21,7 +22,7 @@ edition = "2018"
 
 
 [dependencies]
-hyper-rustls = { version = "0.23", features = [ "rustls-native-certs" ] }
+hyper-rustls = "0.23"
 mime = "0.2"
 serde = "1"
 serde_json = "1"
