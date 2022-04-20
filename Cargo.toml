@@ -5,6 +5,7 @@
 
 name = "google-sheets4"
 version = "3.0.0+20220221"
+# 3.0.0+20220221-fix1 - Cargo.toml: hyper-rustls = "0.22" => "0.23"
 # 3.0.0+20220221-fix0 - ValueRange::values: Option<Vec<Vec<String>>> => Option<Vec<Vec<serde_json::Value>>>
 # 3.0.0+20220221 - https://github.com/Byron/google-apis-rs/tree/main/gen/sheets4
 authors = ["Sebastian Thiel <byronimo@gmail.com>", "Yury Bikuzin <yury.bikuzin@gmail.com>"]
@@ -19,15 +20,15 @@ edition = "2018"
 
 
 [dependencies]
-hyper-rustls = "^0.22"
-mime = "^ 0.2.0"
-serde = "^ 1.0"
-serde_json = "^ 1.0"
-serde_derive = "^ 1.0"
-yup-oauth2 = "^ 6.0"
-itertools = "^ 0.10"
-hyper = "^ 0.14"
-url = "= 1.7"
+hyper-rustls = "0.23"
+mime = "0.2"
+serde = "1"
+serde_json = "1"
+serde_derive = "1"
+yup-oauth2 = "6"
+itertools = "0"
+hyper = "0.14"
+url = "1.7"
 
 
 
